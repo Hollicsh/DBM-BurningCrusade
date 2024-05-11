@@ -3,12 +3,12 @@ name: luals-checker
 on:
   push:
     branches:
-      - master
+      - main
     tags:
       - "*"
   pull_request:
     branches:
-      - master
+      - main
 
 run-name: LuaLS Check
 jobs:
