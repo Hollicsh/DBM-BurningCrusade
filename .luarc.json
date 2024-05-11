@@ -8,12 +8,8 @@
 		"duplicate-doc-field"
 	],
 	"diagnostics.globals": [
-		"GetGossipOptions",
-		"UIDropDownMenu_AddButton",
-		"UIDropDownMenu_CreateInfo",
 		"SHIELDSLOT",
-		"BOSS",
-		"UnitDebuff",
-		"SCENARIO_STAGE"
+		"UIDropDownMenu_AddButton",
+		"UIDropDownMenu_CreateInfo"
 	]
 }
