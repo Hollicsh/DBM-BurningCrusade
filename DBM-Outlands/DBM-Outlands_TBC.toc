@@ -1,5 +1,5 @@
 ## Interface: 20504
-## X-Min-Interface-BCC: 20504
+## X-Min-Interface: 20504
 ## Version: @project-version@
 ## Title:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cff10ff10World Bosses (BC)|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cff10ff10필드 보스 (불성)|r
