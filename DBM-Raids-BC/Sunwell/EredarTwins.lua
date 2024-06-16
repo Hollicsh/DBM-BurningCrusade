@@ -135,7 +135,7 @@ end
 --This still acts as fastest way to get target. The additional checks in success are for locales that may be missing
 function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 	if (msg == L.Nova or msg:find(L.Nova)) and target and self:AntiSpam(5, target..1) then
-		target = DBM:GetUnitFullName(target)
+		target = DBM:GetUnitFullName(target) or target
 		if target == UnitName("player") then
 			specWarnNova:Show()
 			specWarnNova:Play("targetyou")
@@ -147,7 +147,7 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 			self:SetIcon(target, 7, 5)
 		end
 	elseif (msg == L.Conflag or msg:find(L.Conflag)) and target and self:AntiSpam(5, target..2) then
-		target = DBM:GetUnitFullName(target)
+		target = DBM:GetUnitFullName(target) or target
 		if target == UnitName("player") then
 			specWarnConflag:Show()
 			specWarnConflag:Play("targetyou")
