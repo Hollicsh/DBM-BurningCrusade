@@ -11,6 +11,7 @@ mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(22841)
 mod:SetEncounterID(603, 2475)
 mod:SetModelID(21357)
+mod:SetZone(564)
 
 mod:RegisterCombat("combat")
 mod:SetWipeTime(50)--Adds come about every 50 seconds, so require at least this long to wipe combat if they die instantly

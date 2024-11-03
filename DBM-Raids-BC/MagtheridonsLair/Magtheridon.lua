@@ -7,6 +7,8 @@ mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(17257)
 mod:SetEncounterID(651, 2457)
 mod:SetModelID(18527)
+mod:SetZone(544)
+
 mod:RegisterCombat("combat_emote", L.DBM_MAG_EMOTE_PULL)
 
 mod:RegisterEventsInCombat(

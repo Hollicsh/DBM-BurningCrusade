@@ -10,6 +10,7 @@ mod:DisableEEKillDetection()--EE always fires wipe (at least on classic)
 mod:SetModelID(20162)
 mod:SetHotfixNoticeRev(20220130000000)
 mod:SetMinSyncRevision(20220130000000)
+mod:SetZone(548)
 
 mod:RegisterCombat("combat")
 

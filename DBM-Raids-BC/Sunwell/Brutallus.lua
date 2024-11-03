@@ -11,6 +11,7 @@ mod:SetModelID(22711)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
 mod:SetHotfixNoticeRev(20220514000000)
 mod:SetMinSyncRevision(20200726000000)
+mod:SetZone(580)
 
 mod:RegisterCombat("yell", L.Pull)
 mod.disableHealthCombat = true

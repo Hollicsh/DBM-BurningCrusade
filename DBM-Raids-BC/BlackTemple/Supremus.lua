@@ -12,6 +12,7 @@ mod:SetCreatureID(22898)
 mod:SetEncounterID(602, 2474)
 mod:SetModelID(21145)
 mod:SetUsedIcons(8)
+mod:SetZone(564)
 
 mod:RegisterCombat("combat")
 

@@ -5,6 +5,8 @@ mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(16524)
 mod:SetEncounterID(658, 2450)
 mod:SetModelID(16621)
+mod:SetZone(532)
+
 mod:RegisterCombat("combat")
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
 mod:SetMinSyncRevision(20200329000000)--March 3rd, 2020

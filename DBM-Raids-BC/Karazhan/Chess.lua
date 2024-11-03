@@ -10,6 +10,8 @@ else
 end
 mod:SetModelID(18720)
 mod:SetEncounterID(660, 2452)
+mod:SetZone(532)
+
 mod:RegisterCombat("combat")--Actually not how we register combat, bogus because SetWipeTime needs it
 mod:SetWipeTime(600)
 

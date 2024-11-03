@@ -12,6 +12,7 @@ mod:SetHotfixNoticeRev(20220114000000)--01-14-22
 mod:SetMinSyncRevision(20220114000000)--01-14-22
 mod:DisableRegenDetection()--Disable Player regen pull detection
 --mod:DisableESCombatDetection()--Disable ENCOUNTER_START
+mod:SetZone(548)
 
 mod:RegisterCombat("combat")
 

@@ -6,6 +6,7 @@ mod:SetCreatureID(16151, 16152)--15550
 mod:SetEncounterID(652, 2444)
 mod:SetModelID(16416)
 mod:SetBossHPInfoToHighest()
+mod:SetZone(532)
 
 mod:RegisterCombat("combat")
 

@@ -13,6 +13,7 @@ mod:SetEncounterID(605, 2477)
 mod:SetModelID(21443)
 mod:SetHotfixNoticeRev(20220120000000)
 mod:SetMinSyncRevision(20220120000000)
+mod:SetZone(564)
 
 mod:RegisterCombat("combat")
 

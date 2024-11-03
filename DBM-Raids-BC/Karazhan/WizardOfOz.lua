@@ -5,6 +5,8 @@ mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(18168)
 --mod:SetEncounterID(655, 2447)--used by all 3 of them, so not usuable
 mod:SetModelID(17550)
+mod:SetZone(532)
+
 mod:RegisterCombat("yell", L.DBM_OZ_YELL_DOROTHEE)
 mod:SetMinCombatTime(25)
 mod:SetWipeTime(30)

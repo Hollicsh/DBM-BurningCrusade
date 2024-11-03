@@ -5,6 +5,8 @@ mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(15687)--Moroes
 mod:SetEncounterID(653, 2445)
 mod:SetModelID(16540)
+mod:SetZone(532)
+
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
