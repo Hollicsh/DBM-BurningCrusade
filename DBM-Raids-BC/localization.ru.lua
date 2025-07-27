@@ -22,7 +22,7 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	WarnPortal			= "Показывать предупреждение для цели $spell:46021",
-	SpecWarnWildMagic	= "Показать спецпредупреждение для $spell:45004",
+	SpecWarnWildMagic	= "Показывать спецпредупреждение для $spell:45004",
 	ShowFrame			= "Показывать фрейм $spell:44852",
 	FrameClassColor		= "Использовать цвета классов во фрейме $spell:44852",
 	FrameUpwards		= "Развернуть фрейм $spell:44852 вверх",
@@ -632,8 +632,8 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnMark		= "Показать предупреждение для меток",
-	WarnPhase		= "Показать предупреждение для следующей фазы",
+	WarnMark		= "Показывать предупреждение для меток",
+	WarnPhase		= "Показывать предупреждение для следующей фазы",
 	SpecWarnMark	= "Показывать предупреждение, когда урон от дебаффа меток превышает 100%",
 	TimerMark		= "Отсчёт времени до следующих меток"
 }
@@ -658,8 +658,8 @@ L:SetWarningLocalization{
 }
 
 L:SetTimerLocalization{
-	TimerSubmerge		= "Восстановление Погружения",
-	TimerEmerge			= "Восстановление Появления"
+	TimerSubmerge		= "Восст. Погружения",
+	TimerEmerge			= "Восст. Появления"
 }
 
 L:SetOptionLocalization{
@@ -875,9 +875,9 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization{
-	Event				= "Tonight... we explore a tale of forbidden love!",
+	Event				= "Сегодня... мы увидим историю любви!",
 	RJ_Pull				= "Что ты за дьявол, что меня так мучишь?",
-	DBM_RJ_PHASE2_YELL	= "Ночь, добрая и строгая, приди! Верни мне моего Ромуло!",
+	DBM_RJ_PHASE2_YELL	= "Приди же, ласковая ночь, верни мне моего Ромуло!",
 	Romulo				= "Ромуло",
 	Julianne			= "Джулианна"
 }
@@ -996,10 +996,10 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	warningPortal			= "Показывать предупреждение для фазы портала",
+	warningPortal			= "Показывать предупреждение для фазы порталов",
 	warningBanish			= "Показывать предупреждение для фазы изгнания",
-	timerPortalPhase		= "Показать таймер длительности фазы портала",
-	timerBanishPhase		= "Показать таймер длительности фазы изгнания"
+	timerPortalPhase		= "Показывать таймер длительности фазы порталов",
+	timerBanishPhase		= "Показывать таймер длительности фазы изгнания"
 }
 
 L:SetMiscLocalization{
@@ -1015,7 +1015,7 @@ L:SetGeneralLocalization{
 }
 
 L:SetTimerLocalization{
-	timerCheat	= "Восстановление жульничества"
+	timerCheat	= "Восст. Жульничества"
 }
 
 L:SetOptionLocalization{
