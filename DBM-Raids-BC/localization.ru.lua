@@ -370,8 +370,8 @@ L:SetWarningLocalization{
 }
 
 L:SetTimerLocalization{
-	TimerNextHuman		= "Следующая Обычная фаза",
-	TimerNextDemon		= "Следующая фаза Демона"
+	TimerNextHuman		= "След. Обычная фаза",
+	TimerNextDemon		= "След. Фаза Демона"
 }
 
 L:SetOptionLocalization{
@@ -379,7 +379,7 @@ L:SetOptionLocalization{
 	WarnDemon		= "Показывать предупреждение для фазы Демона",
 	TimerNextHuman	= "Отсчёт времени до Обычной фазы",
 	TimerNextDemon	= "Отсчёт времени до фазы Демона",
-	RangeFrame		= "Показывать проверку дистанции (10 ярдов) в фазах 3 и 4"
+	RangeFrame		= "Показывать проверку дистанции (10 м.) в фазах 3 и 4"
 }
 
 L:SetMiscLocalization{
@@ -452,7 +452,7 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnWave		= "Предупреждать о приближении новой волны",
+	WarnWave		= "Показывать предупреждение о приближении новой волны",
 	DetailedWave	= "Подробное предупреждение о приближении новой волны (какие именно мобы)",
 	TimerWave		= "Отсчёт времени до следующей волны"
 }
