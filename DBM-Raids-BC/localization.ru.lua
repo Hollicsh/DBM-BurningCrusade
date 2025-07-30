@@ -122,8 +122,8 @@ L:SetWarningLocalization{
 }
 
 L:SetTimerLocalization{
-	TimerHuman		= "Следующие Гуманоиды (%s)",
-	TimerVoid		= "Следующий Часовой Бездны (%s)",
+	TimerHuman		= "След. Гуманоиды (%s)",
+	TimerVoid		= "След. Часовой Бездны (%s)",
 	TimerPhase		= "Энтропий"
 }
 
@@ -131,8 +131,8 @@ L:SetOptionLocalization{
 	WarnHuman		= "Показывать предупреждение для Гуманоидов",
 	WarnVoid		= "Показывать предупреждение для Часового Бездны",
 	WarnFiend		= "Показывать предупреждение для Демонов во 2-й фазе",
-	TimerHuman		= "Отсчёт времени до Гуманоидов",
-	TimerVoid		= "Отсчёт времени до Часового Бездны",
+	TimerHuman		= "Отсчёт времени до появления Гуманоидов",
+	TimerVoid		= "Отсчёт времени до появления Часового Бездны",
 	TimerPhase		= "Отсчёт времени до перехода на 2-ю фазу"
 }
 
@@ -245,8 +245,8 @@ L:SetTimerLocalization({
 L:SetOptionLocalization({
 	warnAshtongueDefender	= "Показывать предупреждение для Пеплоуста-защитника",
 	warnAshtongueSorcerer	= "Показывать предупреждение для Пеплоуста-колдуна",
-	timerAshtongueDefender	= "Отсчёт времени до Пеплоуста-защитника",
-	timerAshtongueSorcerer	= "Отсчёт времени до Пеплоуста-колдуна"
+	timerAshtongueDefender	= "Отсчёт времени до появления Пеплоуста-защитника",
+	timerAshtongueSorcerer	= "Отсчёт времени до появления Пеплоуста-колдуна"
 })
 
 -------------------------
@@ -281,11 +281,11 @@ L:SetGeneralLocalization{
 L = DBM:GetModLocalization("Souls")
 
 L:SetGeneralLocalization{
-	name = "Воплощение Душ"
+	name = "Реликварий душ"
 }
 
 L:SetWarningLocalization{
-	WarnMana		= "Ноль маны через 30 сек"
+	WarnMana		= "Ноль маны через 30 сек."
 }
 
 L:SetTimerLocalization{
@@ -293,8 +293,8 @@ L:SetTimerLocalization{
 }
 
 L:SetOptionLocalization{
-	WarnMana		= "Показывать предупреждение, когда ноль маны во 2-й фазе",
-	TimerMana		= "Показывать таймер, когда ноль маны во 2-й фазе"
+	WarnMana		= "Показывать предупреждение, когда нет маны во 2-й фазе",
+	TimerMana		= "Отсчет времени до момента, когда нет маны во 2-й фазе"
 }
 
 L:SetMiscLocalization{
@@ -453,7 +453,7 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	WarnWave		= "Показывать предупреждение о приближении новой волны",
-	DetailedWave	= "Подробное предупреждение о приближении новой волны (какие именно мобы)",
+	DetailedWave	= "Показывать подробное предупреждение о приближении новой волны (какие именно мобы)",
 	TimerWave		= "Отсчёт времени до следующей волны"
 }
 
@@ -918,7 +918,7 @@ L:SetTimerLocalization{
 
 L:SetOptionLocalization{
 	AnnounceBosses			= "Показывать предупреждение о появлении боссов",
-	ShowBossTimers			= "Показывать таймеры появления боссов"
+	ShowBossTimers			= "Отсчет времени до появления боссов"
 }
 
 L:SetMiscLocalization{
