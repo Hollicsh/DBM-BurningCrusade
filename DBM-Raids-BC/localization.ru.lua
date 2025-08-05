@@ -566,7 +566,7 @@ L:SetWarningLocalization{
 	WarnMobDead		= "%s упал",
 	WarnEgg			= "Появилось яйцо Феникса",
 	SpecWarnGaze	= "Взгляни на себя - убегай!",
-	SpecWarnEgg		= "Появилось яйцо Феникса — поменяйте цель!"
+	SpecWarnEgg		= "Появилось яйцо Феникса - переключитесь!"
 }
 
 L:SetTimerLocalization{
