@@ -34,7 +34,6 @@ local timerBuffetCD		= mod:NewCDTimer(8, 45018, nil, nil, nil, 2)
 local timerPorted		= mod:NewBuffActiveTimer(60, 46021, nil, nil, nil, 6)
 local timerExhausted	= mod:NewBuffActiveTimer(60, 44867, nil, nil, nil, 6)
 
-mod:AddRangeFrameOption(10, 46021)
 mod:AddBoolOption("ShowFrame", true)
 mod:AddBoolOption("FrameLocked", false)
 mod:AddBoolOption("FrameClassColor", true, nil, function()
@@ -55,14 +54,10 @@ function mod:OnCombatStart(delay)
 	if self.Options.ShowFrame then
 		self:CreateFrame()
 	end
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Show()
-	end
 end
 
 function mod:OnCombatEnd()
 	self:DestroyFrame()
-	DBM.RangeCheck:Hide()
 end
 
 function mod:SPELL_AURA_APPLIED(args)

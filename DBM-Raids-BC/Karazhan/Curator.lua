@@ -27,7 +27,6 @@ local timerEvo			= mod:NewBuffActiveTimer(20, 30254, nil, nil, nil, 6)
 
 local berserkTimer		= mod:NewBerserkTimer(720)
 
-mod:AddRangeFrameOption("10", nil, true)
 
 local addGUIDS = {}
 
@@ -35,15 +34,9 @@ function mod:OnCombatStart(delay)
 	table.wipe(addGUIDS)
 	berserkTimer:Start(-delay)
 --	timerNextEvo:Start(109-delay)
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Show(10)
-	end
 end
 
 function mod:OnCombatEnd()
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Hide()
-	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)

@@ -24,22 +24,15 @@ local timerStormCD		= mod:NewCDTimer(34.1, 43648, nil, nil, nil, 3)--34-55
 
 local berserkTimer		= mod:NewBerserkTimer(600)
 
-mod:AddRangeFrameOption("10")
 mod:AddSetIconOption("StormIcon", 43648, true, 0, {1})
 
 function mod:OnCombatStart(delay)
 --	warnStormSoon:Schedule(43)
 	timerStormCD:Start(46.9)
 	berserkTimer:Start(-delay)
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Show()
-	end
 end
 
 function mod:OnCombatEnd()
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Hide()
-	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)
@@ -50,12 +43,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		timerStorm:Start()
 --		warnStormSoon:Schedule(31)
 		timerStormCD:Start()
-		if self.Options.RangeFrame then
-			DBM.RangeCheck:Hide()
-			self:Schedule(10, function()
-				DBM.RangeCheck:Show()
-			end)
-		end
 		if self.Options.StormIcon then
 			self:SetIcon(args.destName, 1, 1)
 		end

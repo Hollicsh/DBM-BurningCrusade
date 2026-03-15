@@ -37,7 +37,6 @@ local timerSludge	= mod:NewTargetTimer(24, 38246, nil, nil, nil, 3)
 
 local berserkTimer	= mod:NewBerserkTimer(600)
 
-mod:AddRangeFrameOption("10")
 
 local markOfH, markOfC = DBM:GetSpellName(38215), DBM:GetSpellName(38219)
 local damage = {
@@ -53,15 +52,9 @@ local damageNext = {
 function mod:OnCombatStart(delay)
 	timerMark:Start(16-delay, markOfH, "10%")
 	berserkTimer:Start(-delay)
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Show()
-	end
 end
 
 function mod:OnCombatEnd()
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Hide()
-	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)

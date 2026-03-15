@@ -44,21 +44,14 @@ local timerNova				= mod:NewCastTimer(3.5, 45329, nil, false, 2)
 
 local berserkTimer			= mod:NewBerserkTimer(360)
 
-mod:AddRangeFrameOption(10, 45333)
 mod:AddSetIconOption("ConflagIcon", 45333, false, 0, {8})
 mod:AddSetIconOption("NovaIcon", 45329, false, 0, {7})
 
 function mod:OnCombatStart(delay)
 	berserkTimer:Start(-delay)
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Show()
-	end
 end
 
 function mod:OnCombatEnd()
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Hide()
-	end
 end
 
 function mod:SPELL_CAST_START(args)

@@ -61,7 +61,6 @@ local timerGravity		= mod:NewBuffActiveTimer(32, 35941, nil, nil, nil, 6)
 mod:AddSetIconOption("MCIcon", 36797, true, 0, {8, 7, 6})
 mod:AddBoolOption("GazeIcon", false)
 --mod:AddSetIconOption("GazeIcon", 38280, false, false, {1})--Problem with no auto localized spellID to use
-mod:AddRangeFrameOption(10, 37018)
 mod:AddInfoFrameOption(36815, true)
 
 mod.vb.mcIcon = 8
@@ -88,9 +87,6 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:OnCombatEnd()
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Hide()
-	end
 	if self.Options.InfoFrame then
 		DBM.InfoFrame:Hide()
 	end
@@ -186,10 +182,6 @@ function mod:UNIT_DIED(args)
 		timerNextGaze:Cancel()
 	elseif cid == 20060 then
 		timerFearCD:Cancel()
-	elseif cid == 20062 then
-		if self.Options.RangeFrame then
-			DBM.RangeCheck:Hide()
-		end
 	elseif cid == 21268 then
 		warnMobDead:Show(L.Bow)
 	elseif cid == 21269 then
@@ -230,9 +222,6 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)
 		timerPhase1mob:Start(12.5, L.Sanguinar)
 	elseif msg == L.YellCaper or msg:find(L.YellCaper) then
 		timerPhase1mob:Start(7, L.Capernian)
-		if self.Options.RangeFrame then
-			DBM.RangeCheck:Show(10)
-		end
 	elseif msg == L.YellTelo or msg:find(L.YellTelo) then
 		timerPhase1mob:Start(8.4, L.Telonicus)
 	elseif msg == L.YellPhase2 or msg:find(L.YellPhase2) then
@@ -242,9 +231,6 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)
 		warnPhase3:Schedule(104.6)
 	elseif msg == L.YellPhase3 or msg:find(L.YellPhase3) then
 		self:SetStage(3)
-		if self.Options.RangeFrame then
-			DBM.RangeCheck:Show(10)
-		end
 		self:Schedule(10, function()
 			timerPhase:Start(173)--123 pre nerf, 183 post nerf
 		end)

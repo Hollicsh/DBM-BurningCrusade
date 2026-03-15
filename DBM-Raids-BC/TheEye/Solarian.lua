@@ -48,9 +48,6 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnWrath:Show()
 			specWarnWrath:Play("runout")
 			yellWrath:Yell()
-			if self.Options.RangeFrame then
-				DBM.RangeCheck:Show(8)
-			end
 		else
 			warnWrath:Show(args.destName)
 		end
@@ -62,11 +59,6 @@ end
 
 function mod:SPELL_AURA_REMOVED(args)
 	if args.spellId == 42783 or args.spellId == 33045 then
-		if args:IsPlayer() then
-			if self.Options.RangeFrame then
-				DBM.RangeCheck:Hide()
-			end
-		end
 		if self.Options.WrathIcon then
 			self:SetIcon(args.destName, 0)
 		end

@@ -48,7 +48,6 @@ local timerBlueOrb		= mod:NewTimer(37, "TimerBlueOrb", 45109, nil, nil, 5)
 local berserkTimer		= mod:NewBerserkTimer(900)
 
 mod:AddSetIconOption("BloomIcon", 45641, true, 0, {4, 5, 6, 7, 8})
-mod:AddRangeFrameOption(10, 45641)
 
 local warnBloomTargets = {}
 local orbGUIDs = {}
@@ -83,15 +82,9 @@ function mod:OnCombatStart(delay)
 	self:SetStage(1)
 	timerBloomCD:Start(13.5-delay)
 	berserkTimer:Start(-delay)
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Show()
-	end
 end
 
 function mod:OnCombatEnd()
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Hide()
-	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)

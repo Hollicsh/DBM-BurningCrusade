@@ -40,7 +40,6 @@ local timerBurnCD		= mod:NewCDTimer(20, 46394, nil, nil, nil, 3)
 local berserkTimer		= mod:NewBerserkTimer(360)
 
 mod:AddSetIconOption("BurnIcon", 46394, true, 0, {1, 2, 3, 4, 5, 6, 7, 8})
-mod:AddRangeFrameOption(46394, 4)
 
 mod.vb.burnIcon = 8
 local debuffName = DBM:GetSpellName(46394)
@@ -60,9 +59,6 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:OnCombatEnd()
-	if self.Options.RangeFrame then
-		DBM.RangeCheck:Hide()
-	end
 end
 
 function mod:SPELL_CAST_START(args)
@@ -110,13 +106,6 @@ function mod:SPELL_AURA_APPLIED(args)
 				specWarnBurn:Play("targetyou")
 			end
 			yellBurnFades:Countdown(60)
-		end
-		if self.Options.RangeFrame then
-			if DBM:UnitDebuff("player", args.spellName) then--You have debuff, show everyone
-				DBM.RangeCheck:Show(4, nil)
-			else--You do not have debuff, only show players who do
-				DBM.RangeCheck:Show(4, DebuffFilter)
-			end
 		end
 	elseif args.spellId == 45185 then
 		warnStomp:Show(args.destName)
