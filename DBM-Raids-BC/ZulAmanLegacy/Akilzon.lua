@@ -32,8 +32,6 @@ function mod:OnCombatStart(delay)
 	berserkTimer:Start(-delay)
 end
 
-function mod:OnCombatEnd()
-end
 
 function mod:SPELL_AURA_APPLIED(args)
 	if args:IsSpellID(43648) then

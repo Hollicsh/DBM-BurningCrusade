@@ -80,8 +80,6 @@ function mod:OnCombatStart(delay)
 	--self.vb.mcIcon = 2
 end
 
-function mod:OnCombatEnd()
-end
 
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 38280 then

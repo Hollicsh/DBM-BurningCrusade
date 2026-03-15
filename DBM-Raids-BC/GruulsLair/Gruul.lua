@@ -44,8 +44,6 @@ function mod:OnCombatStart(delay)
 	timerGroundSlamCD:Start(40-delay)
 end
 
-function mod:OnCombatEnd()
-end
 
 function mod:SPELL_CAST_START(args)
 	if args.spellId == 33525 then--Ground Slam

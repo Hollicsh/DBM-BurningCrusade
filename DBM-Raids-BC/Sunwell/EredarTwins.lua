@@ -51,8 +51,6 @@ function mod:OnCombatStart(delay)
 	berserkTimer:Start(-delay)
 end
 
-function mod:OnCombatEnd()
-end
 
 function mod:SPELL_CAST_START(args)
 	if args.spellId == 45248 then

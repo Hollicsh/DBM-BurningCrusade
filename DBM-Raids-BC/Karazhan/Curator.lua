@@ -36,8 +36,6 @@ function mod:OnCombatStart(delay)
 --	timerNextEvo:Start(109-delay)
 end
 
-function mod:OnCombatEnd()
-end
 
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 30254 then
