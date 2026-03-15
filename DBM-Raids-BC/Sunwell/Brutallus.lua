@@ -4,6 +4,7 @@ local L		= mod:GetLocalizedStrings()
 mod.statTypes = "normal25"
 
 mod:SetRevision("@file-date-integer@")
+mod:DisableHardcodedOptions()
 mod:SetCreatureID(24882)
 mod:SetEncounterID(725, 2489)
 mod:DisableESCombatDetection()--ES fires for the RP event that has nothing to do with engaging boss

@@ -2,6 +2,7 @@ local mod	= DBM:NewMod("Halazzi", "DBM-Raids-BC", 9)
 local L		= mod:GetLocalizedStrings()
 
 mod:SetRevision("@file-date-integer@")
+mod:DisableHardcodedOptions()
 mod:SetCreatureID(23577)
 mod:SetEncounterID(1192, 2485)
 mod:SetZone(568)

@@ -4,6 +4,7 @@ local L		= mod:GetLocalizedStrings()
 mod.statTypes = "normal25"
 
 mod:SetRevision("@file-date-integer@")
+mod:DisableHardcodedOptions()
 mod:SetCreatureID(21216)
 mod:SetEncounterID(623, 2458)
 mod:DisableEEKillDetection()--EE always fires wipe (at least on classic)

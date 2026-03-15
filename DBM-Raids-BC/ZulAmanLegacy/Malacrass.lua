@@ -2,6 +2,7 @@ local mod	= DBM:NewMod("Malacrass", "DBM-Raids-BC", 9)
 local L		= mod:GetLocalizedStrings()
 
 mod:SetRevision("@file-date-integer@")
+mod:DisableHardcodedOptions()
 mod:SetCreatureID(24239)
 mod:SetEncounterID(1193, 2486)
 mod:SetZone(568)

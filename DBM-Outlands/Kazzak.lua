@@ -2,6 +2,7 @@ local mod	= DBM:NewMod("Kazzak", "DBM-Outlands")
 local L		= mod:GetLocalizedStrings()
 
 mod:SetRevision("@file-date-integer@")
+mod:DisableHardcodedOptions()
 mod:SetCreatureID(18728)
 mod:SetModelID(17887)
 mod:SetUsedIcons(8)

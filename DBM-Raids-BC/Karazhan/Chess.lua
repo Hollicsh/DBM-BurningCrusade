@@ -3,6 +3,7 @@ local L		= mod:GetLocalizedStrings()
 
 local playerFactoin = UnitFactionGroup("player")
 mod:SetRevision("@file-date-integer@")
+mod:DisableHardcodedOptions()
 if playerFactoin == "Alliance" then
 	mod:SetCreatureID(21752)--Warchief Blackhand
 else

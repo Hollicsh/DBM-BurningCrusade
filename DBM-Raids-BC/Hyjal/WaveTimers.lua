@@ -2,6 +2,7 @@ local mod	= DBM:NewMod("HyjalWaveTimers", "DBM-Raids-BC", 3)
 local L		= mod:GetLocalizedStrings()
 
 mod:SetRevision("@file-date-integer@")
+mod:DisableHardcodedOptions()
 mod:SetZone(534)
 
 mod:RegisterEvents(
